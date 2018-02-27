@@ -12,16 +12,16 @@ Do you have any suggestions for improvement? Open an issue!
 
 Do you want to contribute to the project? follow the steps below:
 
-```python
+```bash
 $ pipenv install
 ```
 and
-```python
+```bash
 $ pipenv install --dev
 ```
 Run the virtual environment with:
 
-```python
+```bash
 $ pipenv shell
 ```
 
