@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+import dj_database_url
 
 from decouple import config
 
@@ -28,7 +29,7 @@ SECRET_KEY = '*5nq$hogvjy^-m6c8fg3k#lcn4my^55!_onxa*hfgehlqgpsb@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -136,3 +137,8 @@ TOKEN = config('TOKEN')
 
 CLIENT_ID = config('CLIENT_ID')
 CLIENT_SECRET  = config('CLIENT_SECRET')
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
