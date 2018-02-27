@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 import dj_database_url
+import djcelery
+
+from datetime import timedelta
 
 from decouple import config
 
@@ -44,7 +47,9 @@ DEFAULT_APPS = [
     'django.contrib.staticfiles',
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    'djcelery',
+]
 
 LOCAL_APPS = [
     'courses',
@@ -149,3 +154,20 @@ db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Celery configs
+
+djcelery.setup_loader()
+
+BROKER_URL = 'redis://localhost:6379/0'
+
+CELERYBEAT_SCHEDULE = {
+    'run-every-60-secounds': {
+        'task': 'courses.tasks.search_course',
+        'schedule': timedelta(seconds=60),
+        'args': ()
+    }
+}
+
+
+CELERY_ALWAYS_EAGER = True
