@@ -1,5 +1,7 @@
 # Udemy Free Courses
 
+![Logo](logo.png)
+
 What to stay inside the free udemy courses?
 
 Join the [Udemy Free Courses](https://t.me/freecoursesudemy) telegram channel and stay on top of all the free courses available at udemy!
