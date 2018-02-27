@@ -2,11 +2,11 @@
 
 What to stay inside the free udemy courses?
 
-Join the udemy free courses telegram channel and stay on top of all the free courses available at udemy!
+Join the [Udemy Free Courses](https://t.me/freecoursesudemy) telegram channel and stay on top of all the free courses available at udemy!
 
 # Suggestions
 
-Do you have any suggestions for improvement? Open an issue!
+Do you have any suggestions for improvement? Open an [issue](https://github.com/hudsonbrendon/udemy-free-courses/issues)!
 
 # Contributions
 
