@@ -2,9 +2,9 @@
 
 ![Logo](logo.png)
 
-What to stay inside the free udemy courses?
+Want to be up to date with Udemy free courses?
 
-Join the [Udemy Free Courses](https://t.me/freecoursesudemy) telegram channel and stay on top of all the free courses available at udemy!
+Join the [Udemy Free Courses](https://t.me/freecoursesudemy) telegram channel and be notified about all the free courses available at udemy!
 
 # Suggestions
 
@@ -12,7 +12,7 @@ Do you have any suggestions for improvement? Open an [issue](https://github.com/
 
 # Contributions
 
-Do you want to contribute to the project? follow the steps below:
+Do you want to contribute to the project? Follow the steps below:
 
 ```bash
 $ pipenv install
